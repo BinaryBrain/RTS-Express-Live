@@ -1,0 +1,510 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		990B95361D2E971A00C9E550 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 990B95351D2E971A00C9E550 /* AppDelegate.swift */; };
+		990B95381D2E971A00C9E550 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 990B95371D2E971A00C9E550 /* ViewController.swift */; };
+		990B953B1D2E971A00C9E550 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 990B95391D2E971A00C9E550 /* Main.storyboard */; };
+		990B953D1D2E971A00C9E550 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 990B953C1D2E971A00C9E550 /* Assets.xcassets */; };
+		990B95401D2E971A00C9E550 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 990B953E1D2E971A00C9E550 /* LaunchScreen.storyboard */; };
+		990B954B1D2E971A00C9E550 /* Hello_StreamTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 990B954A1D2E971A00C9E550 /* Hello_StreamTests.swift */; };
+		990B95561D2E971A00C9E550 /* Hello_StreamUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 990B95551D2E971A00C9E550 /* Hello_StreamUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		990B95471D2E971A00C9E550 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 990B952A1D2E971900C9E550 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 990B95311D2E971900C9E550;
+			remoteInfo = "Hello-Stream";
+		};
+		990B95521D2E971A00C9E550 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 990B952A1D2E971900C9E550 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 990B95311D2E971900C9E550;
+			remoteInfo = "Hello-Stream";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		990B95321D2E971900C9E550 /* Hello-Stream.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hello-Stream.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		990B95351D2E971A00C9E550 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		990B95371D2E971A00C9E550 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		990B953A1D2E971A00C9E550 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		990B953C1D2E971A00C9E550 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		990B953F1D2E971A00C9E550 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		990B95411D2E971A00C9E550 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		990B95461D2E971A00C9E550 /* Hello-StreamTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Hello-StreamTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		990B954A1D2E971A00C9E550 /* Hello_StreamTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hello_StreamTests.swift; sourceTree = "<group>"; };
+		990B954C1D2E971A00C9E550 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		990B95511D2E971A00C9E550 /* Hello-StreamUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Hello-StreamUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		990B95551D2E971A00C9E550 /* Hello_StreamUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hello_StreamUITests.swift; sourceTree = "<group>"; };
+		990B95571D2E971A00C9E550 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		990B952F1D2E971900C9E550 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		990B95431D2E971A00C9E550 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		990B954E1D2E971A00C9E550 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		990B95291D2E971900C9E550 = {
+			isa = PBXGroup;
+			children = (
+				990B95341D2E971A00C9E550 /* Hello-Stream */,
+				990B95491D2E971A00C9E550 /* Hello-StreamTests */,
+				990B95541D2E971A00C9E550 /* Hello-StreamUITests */,
+				990B95331D2E971900C9E550 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		990B95331D2E971900C9E550 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				990B95321D2E971900C9E550 /* Hello-Stream.app */,
+				990B95461D2E971A00C9E550 /* Hello-StreamTests.xctest */,
+				990B95511D2E971A00C9E550 /* Hello-StreamUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		990B95341D2E971A00C9E550 /* Hello-Stream */ = {
+			isa = PBXGroup;
+			children = (
+				990B95351D2E971A00C9E550 /* AppDelegate.swift */,
+				990B95371D2E971A00C9E550 /* ViewController.swift */,
+				990B95391D2E971A00C9E550 /* Main.storyboard */,
+				990B953C1D2E971A00C9E550 /* Assets.xcassets */,
+				990B953E1D2E971A00C9E550 /* LaunchScreen.storyboard */,
+				990B95411D2E971A00C9E550 /* Info.plist */,
+			);
+			path = "Hello-Stream";
+			sourceTree = "<group>";
+		};
+		990B95491D2E971A00C9E550 /* Hello-StreamTests */ = {
+			isa = PBXGroup;
+			children = (
+				990B954A1D2E971A00C9E550 /* Hello_StreamTests.swift */,
+				990B954C1D2E971A00C9E550 /* Info.plist */,
+			);
+			path = "Hello-StreamTests";
+			sourceTree = "<group>";
+		};
+		990B95541D2E971A00C9E550 /* Hello-StreamUITests */ = {
+			isa = PBXGroup;
+			children = (
+				990B95551D2E971A00C9E550 /* Hello_StreamUITests.swift */,
+				990B95571D2E971A00C9E550 /* Info.plist */,
+			);
+			path = "Hello-StreamUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		990B95311D2E971900C9E550 /* Hello-Stream */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 990B955A1D2E971A00C9E550 /* Build configuration list for PBXNativeTarget "Hello-Stream" */;
+			buildPhases = (
+				990B952E1D2E971900C9E550 /* Sources */,
+				990B952F1D2E971900C9E550 /* Frameworks */,
+				990B95301D2E971900C9E550 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Hello-Stream";
+			productName = "Hello-Stream";
+			productReference = 990B95321D2E971900C9E550 /* Hello-Stream.app */;
+			productType = "com.apple.product-type.application";
+		};
+		990B95451D2E971A00C9E550 /* Hello-StreamTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 990B955D1D2E971A00C9E550 /* Build configuration list for PBXNativeTarget "Hello-StreamTests" */;
+			buildPhases = (
+				990B95421D2E971A00C9E550 /* Sources */,
+				990B95431D2E971A00C9E550 /* Frameworks */,
+				990B95441D2E971A00C9E550 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				990B95481D2E971A00C9E550 /* PBXTargetDependency */,
+			);
+			name = "Hello-StreamTests";
+			productName = "Hello-StreamTests";
+			productReference = 990B95461D2E971A00C9E550 /* Hello-StreamTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		990B95501D2E971A00C9E550 /* Hello-StreamUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 990B95601D2E971A00C9E550 /* Build configuration list for PBXNativeTarget "Hello-StreamUITests" */;
+			buildPhases = (
+				990B954D1D2E971A00C9E550 /* Sources */,
+				990B954E1D2E971A00C9E550 /* Frameworks */,
+				990B954F1D2E971A00C9E550 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				990B95531D2E971A00C9E550 /* PBXTargetDependency */,
+			);
+			name = "Hello-StreamUITests";
+			productName = "Hello-StreamUITests";
+			productReference = 990B95511D2E971A00C9E550 /* Hello-StreamUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		990B952A1D2E971900C9E550 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Sacha Bron";
+				TargetAttributes = {
+					990B95311D2E971900C9E550 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 2P662EVER8;
+					};
+					990B95451D2E971A00C9E550 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 2P662EVER8;
+						TestTargetID = 990B95311D2E971900C9E550;
+					};
+					990B95501D2E971A00C9E550 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 2P662EVER8;
+						TestTargetID = 990B95311D2E971900C9E550;
+					};
+				};
+			};
+			buildConfigurationList = 990B952D1D2E971900C9E550 /* Build configuration list for PBXProject "Hello-Stream" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 990B95291D2E971900C9E550;
+			productRefGroup = 990B95331D2E971900C9E550 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				990B95311D2E971900C9E550 /* Hello-Stream */,
+				990B95451D2E971A00C9E550 /* Hello-StreamTests */,
+				990B95501D2E971A00C9E550 /* Hello-StreamUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		990B95301D2E971900C9E550 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				990B95401D2E971A00C9E550 /* LaunchScreen.storyboard in Resources */,
+				990B953D1D2E971A00C9E550 /* Assets.xcassets in Resources */,
+				990B953B1D2E971A00C9E550 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		990B95441D2E971A00C9E550 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		990B954F1D2E971A00C9E550 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		990B952E1D2E971900C9E550 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				990B95381D2E971A00C9E550 /* ViewController.swift in Sources */,
+				990B95361D2E971A00C9E550 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		990B95421D2E971A00C9E550 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				990B954B1D2E971A00C9E550 /* Hello_StreamTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		990B954D1D2E971A00C9E550 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				990B95561D2E971A00C9E550 /* Hello_StreamUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		990B95481D2E971A00C9E550 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 990B95311D2E971900C9E550 /* Hello-Stream */;
+			targetProxy = 990B95471D2E971A00C9E550 /* PBXContainerItemProxy */;
+		};
+		990B95531D2E971A00C9E550 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 990B95311D2E971900C9E550 /* Hello-Stream */;
+			targetProxy = 990B95521D2E971A00C9E550 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		990B95391D2E971A00C9E550 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				990B953A1D2E971A00C9E550 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		990B953E1D2E971A00C9E550 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				990B953F1D2E971A00C9E550 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		990B95581D2E971A00C9E550 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		990B95591D2E971A00C9E550 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		990B955B1D2E971A00C9E550 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Hello-Stream/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ch.sachabron.Hello-Stream";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		990B955C1D2E971A00C9E550 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Hello-Stream/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ch.sachabron.Hello-Stream";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		990B955E1D2E971A00C9E550 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Hello-StreamTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ch.sachabron.Hello-StreamTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hello-Stream.app/Hello-Stream";
+			};
+			name = Debug;
+		};
+		990B955F1D2E971A00C9E550 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Hello-StreamTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ch.sachabron.Hello-StreamTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hello-Stream.app/Hello-Stream";
+			};
+			name = Release;
+		};
+		990B95611D2E971A00C9E550 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Hello-StreamUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ch.sachabron.Hello-StreamUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Hello-Stream";
+			};
+			name = Debug;
+		};
+		990B95621D2E971A00C9E550 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Hello-StreamUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ch.sachabron.Hello-StreamUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Hello-Stream";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		990B952D1D2E971900C9E550 /* Build configuration list for PBXProject "Hello-Stream" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				990B95581D2E971A00C9E550 /* Debug */,
+				990B95591D2E971A00C9E550 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		990B955A1D2E971A00C9E550 /* Build configuration list for PBXNativeTarget "Hello-Stream" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				990B955B1D2E971A00C9E550 /* Debug */,
+				990B955C1D2E971A00C9E550 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		990B955D1D2E971A00C9E550 /* Build configuration list for PBXNativeTarget "Hello-StreamTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				990B955E1D2E971A00C9E550 /* Debug */,
+				990B955F1D2E971A00C9E550 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		990B95601D2E971A00C9E550 /* Build configuration list for PBXNativeTarget "Hello-StreamUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				990B95611D2E971A00C9E550 /* Debug */,
+				990B95621D2E971A00C9E550 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 990B952A1D2E971900C9E550 /* Project object */;
+}
