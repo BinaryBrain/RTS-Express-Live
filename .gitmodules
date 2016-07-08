@@ -1,0 +1,3 @@
+[submodule "Submodules/HudlFFmpeg"]
+	path = Submodules/HudlFFmpeg
+	url = git@github.com:BinaryBrain/iOS-FFmpeg-processor.git
