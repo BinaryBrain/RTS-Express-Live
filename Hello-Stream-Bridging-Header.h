@@ -10,5 +10,7 @@
 #define Hello_Stream_Bridging_Header_h
 
 #import "KFRecorder.h"
+#import "AssetGroup.h"
+#import "Utilities.h"
 
 #endif /* Hello_Stream_Bridging_Header_h */

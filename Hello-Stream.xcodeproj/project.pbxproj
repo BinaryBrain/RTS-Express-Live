@@ -18,6 +18,7 @@
 		990B95741D2E999900C9E550 /* libz.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 990B95731D2E999900C9E550 /* libz.1.dylib */; };
 		990B95761D2E99AA00C9E550 /* libiconv.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 990B95751D2E99AA00C9E550 /* libiconv.2.dylib */; };
 		990B95781D2E99C100C9E550 /* libc++.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 990B95771D2E99C100C9E550 /* libc++.1.dylib */; };
+		990B958E1D3007F400C9E550 /* Uploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 990B958D1D3007F400C9E550 /* Uploader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,20 +50,6 @@
 			remoteGlobalIDString = ED92E9E11A705CEF00E2C415;
 			remoteInfo = HudlFFmpegProcessorTests;
 		};
-		990B95881D2EAF9000C9E550 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 990B95831D2EAF8F00C9E550 /* HudlFFmpegSample.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = ED0C13BC1AA635ED008639D6;
-			remoteInfo = HudlFFmpegSample;
-		};
-		990B958A1D2EAF9000C9E550 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 990B95831D2EAF8F00C9E550 /* HudlFFmpegSample.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = ED0C13D51AA635ED008639D6;
-			remoteInfo = HudlFFmpegSampleTests;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -83,8 +70,8 @@
 		990B95731D2E999900C9E550 /* libz.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.dylib; path = ../../../../usr/lib/libz.1.dylib; sourceTree = "<group>"; };
 		990B95751D2E99AA00C9E550 /* libiconv.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.2.dylib; path = ../../../../usr/lib/libiconv.2.dylib; sourceTree = "<group>"; };
 		990B95771D2E99C100C9E550 /* libc++.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.1.dylib"; path = "../../../../usr/lib/libc++.1.dylib"; sourceTree = "<group>"; };
-		990B95831D2EAF8F00C9E550 /* HudlFFmpegSample.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = HudlFFmpegSample.xcodeproj; path = Submodules/HudlFFmpeg/Sample/HudlFFmpegSample/HudlFFmpegSample.xcodeproj; sourceTree = "<group>"; };
 		990B958C1D2EB05F00C9E550 /* Hello-Stream-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Hello-Stream-Bridging-Header.h"; sourceTree = "<group>"; };
+		990B958D1D3007F400C9E550 /* Uploader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Uploader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,7 +110,6 @@
 				990B95771D2E99C100C9E550 /* libc++.1.dylib */,
 				990B95751D2E99AA00C9E550 /* libiconv.2.dylib */,
 				990B95731D2E999900C9E550 /* libz.1.dylib */,
-				990B95831D2EAF8F00C9E550 /* HudlFFmpegSample.xcodeproj */,
 				990B95631D2E981100C9E550 /* HudlFFmpegProcessor.xcodeproj */,
 				990B95341D2E971A00C9E550 /* Hello-Stream */,
 				990B95491D2E971A00C9E550 /* Hello-StreamTests */,
@@ -151,6 +137,7 @@
 				990B953C1D2E971A00C9E550 /* Assets.xcassets */,
 				990B953E1D2E971A00C9E550 /* LaunchScreen.storyboard */,
 				990B95411D2E971A00C9E550 /* Info.plist */,
+				990B958D1D3007F400C9E550 /* Uploader.swift */,
 			);
 			path = "Hello-Stream";
 			sourceTree = "<group>";
@@ -178,15 +165,6 @@
 			children = (
 				990B95691D2E981100C9E550 /* libHudlFFmpegProcessor.a */,
 				990B956B1D2E981100C9E550 /* HudlFFmpegProcessorTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		990B95841D2EAF8F00C9E550 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				990B95891D2EAF9000C9E550 /* HudlFFmpegSample.app */,
-				990B958B1D2EAF9000C9E550 /* HudlFFmpegSampleTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -289,10 +267,6 @@
 					ProductGroup = 990B95641D2E981100C9E550 /* Products */;
 					ProjectRef = 990B95631D2E981100C9E550 /* HudlFFmpegProcessor.xcodeproj */;
 				},
-				{
-					ProductGroup = 990B95841D2EAF8F00C9E550 /* Products */;
-					ProjectRef = 990B95831D2EAF8F00C9E550 /* HudlFFmpegSample.xcodeproj */;
-				},
 			);
 			projectRoot = "";
 			targets = (
@@ -316,20 +290,6 @@
 			fileType = wrapper.cfbundle;
 			path = HudlFFmpegProcessorTests.xctest;
 			remoteRef = 990B956A1D2E981100C9E550 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		990B95891D2EAF9000C9E550 /* HudlFFmpegSample.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = HudlFFmpegSample.app;
-			remoteRef = 990B95881D2EAF9000C9E550 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		990B958B1D2EAF9000C9E550 /* HudlFFmpegSampleTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = HudlFFmpegSampleTests.xctest;
-			remoteRef = 990B958A1D2EAF9000C9E550 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -366,6 +326,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				990B958E1D3007F400C9E550 /* Uploader.swift in Sources */,
 				990B95381D2E971A00C9E550 /* ViewController.swift in Sources */,
 				990B95361D2E971A00C9E550 /* AppDelegate.swift in Sources */,
 			);
@@ -602,6 +563,7 @@
 				990B955C1D2E971A00C9E550 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		990B955D1D2E971A00C9E550 /* Build configuration list for PBXNativeTarget "Hello-StreamTests" */ = {
 			isa = XCConfigurationList;
@@ -610,6 +572,7 @@
 				990B955F1D2E971A00C9E550 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		990B95601D2E971A00C9E550 /* Build configuration list for PBXNativeTarget "Hello-StreamUITests" */ = {
 			isa = XCConfigurationList;
@@ -618,6 +581,7 @@
 				990B95621D2E971A00C9E550 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

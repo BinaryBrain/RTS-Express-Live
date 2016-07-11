@@ -13,11 +13,15 @@ class ViewController: UIViewController {
 	@IBOutlet weak var recordBtn: UIButton!
 
 	let recorder = KFRecorder(name: "test")
+	let uploader = Uploader(endpoint: NSURL(string: "http://192.168.1.121:3000")!)
+	
+	let filesURL = NSURL(fileURLWithPath: Utilities.applicationSupportDirectory())
+	// let documentsURL = NSFileManager.defaultManager().URLsForDirectory(.DocumentDirectory, inDomains: .UserDomainMask)[0]
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		// Do any additional setup after loading the view, typically from a nib.
-
+		
 		let parentLayer: CALayer = self.view.layer
 
 		var previewLayer = AVCaptureVideoPreviewLayer()
@@ -37,13 +41,35 @@ class ViewController: UIViewController {
 
 		recorder.session.startRunning()
 		recorder.startRecording()
-		
-		// [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(newAssetGroupCreated:) name:NotifNewAssetGroupCreated object:nil];
+
+		NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(newAssetGroupCreated), name: NotifNewAssetGroupCreated, object: nil)
 	}
 
 	override func didReceiveMemoryWarning() {
 		super.didReceiveMemoryWarning()
 		// Dispose of any resources that can be recreated.
+	}
+	
+	func newAssetGroupCreated(notification: NSNotification) {
+		print("New Asset Group - %@", notification.object);
+		
+		let info = notification.object as! AssetGroup
+		
+		let filePath: NSURL = filesURL.URLByAppendingPathComponent(info.fileName)
+		
+		let start = NSDate();
+		uploader.sendFile(filePath) { (obj, success) in
+			let end = NSDate();
+			let timeInterval: Double = end.timeIntervalSinceDate(start);
+			print("Time elapsed for file \(filePath.lastPathComponent!): \(timeInterval)s");
+			
+			if (success ?? false) {
+				print("File successfuly sent!")
+			} else {
+				print("Error while sending file")
+				print(obj)
+			}
+		}
 	}
 
 	@IBAction func recordTapped(sender: UIButton) {
