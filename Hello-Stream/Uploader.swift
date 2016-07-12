@@ -10,15 +10,27 @@ import Foundation
 
 public class Uploader {
 	let url: NSURL
-	let timeout = 30.0 // in seconds
+	let timeout = 15.0 // in seconds
+
+	var queue: [(NSURL, completionHandler?)] = []
 
 	init (endpoint: NSURL) {
 		self.url = endpoint
 	}
 
-	public typealias completionHandler = (obj:AnyObject?, success: Bool?) -> Void
+	public typealias completionHandler = (obj: AnyObject?, success: Bool?) -> Void
 
-	public func sendFile(filePath: NSURL, _ aHandler: completionHandler?) -> Void {
+	public func addFileToQueue(filePath: NSURL, _ aHandler: completionHandler?) {
+		print("Upload queue size: " + String(queue.count))
+
+		queue.append((filePath, aHandler))
+
+		if (queue.count == 1) {
+			sendFile(queue.first!.0, queue.first!.1)
+		}
+	}
+
+	private func sendFile(filePath: NSURL, _ aHandler: completionHandler?) {
 		let cachePolicy = NSURLRequestCachePolicy.ReloadIgnoringLocalCacheData
 		let request = NSMutableURLRequest(URL: url, cachePolicy: cachePolicy, timeoutInterval: timeout)
 		request.HTTPMethod = "POST"
@@ -28,7 +40,7 @@ public class Uploader {
 		let contentType = "multipart/form-data; boundary=" + boundaryConstant
 
 		let fileName = filePath.lastPathComponent!
-		let mimeType = " video/mp4"
+		let mimeType = "video/MP2T"
 		let folder = "test"
 
 		request.setValue(contentType, forHTTPHeaderField: "Content-Type")
@@ -48,7 +60,7 @@ public class Uploader {
 				"--\(boundaryConstant)\r\n" +
 				"Content-Disposition: form-data; name=\"fragment\"; filename=\"\(fileName)\"\r\n" +
 				"Content-Type: \(mimeType)\r\n\r\n"
-			
+
 			let body = NSMutableData()
 			body.appendData(dataString.dataUsingEncoding(NSUTF8StringEncoding)!)
 			body.appendData(NSData(contentsOfFile: filePath.path!)!)
@@ -56,16 +68,27 @@ public class Uploader {
 
 			request.HTTPBody = body
 
-			// Make an asynchronous call so as not to hold up other processes.
+			// Async call
 			let session = NSURLSession.sharedSession()
 			let task = session.dataTaskWithRequest(request, completionHandler: { data, response, error -> Void in
 				if (error != nil) {
 					aHandler?(obj: error, success: false)
+
+					// If there's a timeout, we retry uploading
+					if error?.code != NSURLErrorTimedOut {
+						self.queue.removeFirst()
+					}
 				} else {
 					aHandler?(obj: data, success: true)
+					self.queue.removeFirst()
+				}
+
+				if (!self.queue.isEmpty) {
+					self.sendFile(self.queue.first!.0, self.queue.first!.1)
 				}
 			})
 
+			// Run the async call
 			task.resume()
 		}
 	}
