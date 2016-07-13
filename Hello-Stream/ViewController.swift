@@ -58,30 +58,50 @@ class ViewController: UIViewController {
 		let info = notification.object as! AssetGroup
 		let segmentDuration = info.duration
 		let filePath: NSURL = filesURL.URLByAppendingPathComponent(info.fileName)
+		
+		uploadSegment(filePath, segmentDuration: segmentDuration)
+		
+		let manifestPath: NSURL = filesURL.URLByAppendingPathComponent(info.fileName)
+		uploadPlaylist(manifestPath)
+	}
 
+	func uploadSegment(filePath: NSURL, segmentDuration: Double) {
 		let startTime = NSDate()
-
+		
 		uploader.addFileToQueue(filePath) { (obj, success) in
 			print("-- File \(filePath.lastPathComponent!) (\(segmentDuration)s)")
-
+			
 			let endTime = NSDate()
 			let uploadDuration: Double = endTime.timeIntervalSinceDate(startTime)
-
+			
 			// Compute the new bitrate to optimize upload time and
 			var newBitrate = Int(Double(self.recorder.h264Encoder.bitrate) * segmentDuration * self.uploadDurationRatio / uploadDuration)
 			newBitrate = min(newBitrate, self.maxBitrate)
 			newBitrate = max(newBitrate, self.minBitrate)
 			print("New Bitrate: " + String(newBitrate))
 			self.recorder.h264Encoder.bitrate = Int32(newBitrate)
-
+			
 			if (success ?? false) {
 				print("Upload successful")
 			} else {
 				print("Error while sending file")
 				print(obj)
 			}
-
+			
 			print("Upload time: \(uploadDuration)s")
+		}
+	}
+	
+	func uploadPlaylist(manifestPath: NSURL) {
+		uploader.addFileToQueue(manifestPath) { (obj, success) in
+			print("-- Plylist \(manifestPath.lastPathComponent!)")
+			
+			if (success ?? false) {
+				print("Upload playlist successful")
+			} else {
+				print("Error while sending playlist")
+				print(obj)
+			}
 		}
 	}
 
