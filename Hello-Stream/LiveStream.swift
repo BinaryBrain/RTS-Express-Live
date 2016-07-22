@@ -14,11 +14,13 @@ class LiveStream {
 	let uploadDurationRatio = 0.7
 	
 	let recorder = KFRecorder(name: "test")
-	let uploader = Uploader(endpoint: NSURL(string: "http://192.168.1.121:3000")!)
+	var uploader: Uploader
 
 	let filesURL = NSURL(fileURLWithPath: Utilities.applicationSupportDirectory())
 
-	init () {
+	init (uploader: Uploader) {
+		self.uploader = uploader
+		
 		recorder.session.startRunning()
 		
 		NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(newAssetGroupCreated), name: NotifNewAssetGroupCreated, object: nil)
@@ -50,14 +52,10 @@ class LiveStream {
 	
 	func uploadSegment(filePath: NSURL, segmentDuration: Double) {
 		print("-- File \(filePath.path!) (\(segmentDuration)s)")
-		let startTime = NSDate()
 		
-		uploader.addFileToQueue(filePath) { (obj, success) in
-			let endTime = NSDate()
-			let uploadDuration: Double = endTime.timeIntervalSinceDate(startTime)
-			
+		uploader.send(filePath) { (obj, success, duration) in
 			// Compute the new bitrate to optimize upload time and
-			var newBitrate = Int(Double(self.recorder.h264Encoder.bitrate) * segmentDuration * self.uploadDurationRatio / uploadDuration)
+			var newBitrate = Int(Double(self.recorder.h264Encoder.bitrate) * segmentDuration * self.uploadDurationRatio / duration!)
 			newBitrate = min(newBitrate, self.maxBitrate)
 			newBitrate = max(newBitrate, self.minBitrate)
 			print("New Bitrate: " + String(newBitrate))
@@ -70,7 +68,7 @@ class LiveStream {
 				print(obj)
 			}
 			
-			print("Upload time: \(uploadDuration)s")
+			print("Upload time: \(duration!)s")
 		}
 	}
 	
@@ -82,7 +80,7 @@ class LiveStream {
 			return
 		}
 		
-		uploader.addFileToQueue(manifestPath) { (obj, success) in
+		uploader.send(manifestPath) { (obj, success, duration) in
 			if (success ?? false) {
 				print("Upload manifest successful")
 			} else {

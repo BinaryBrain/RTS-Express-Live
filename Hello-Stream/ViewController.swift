@@ -11,10 +11,11 @@ import UIKit
 class ViewController: UIViewController {
 	@IBOutlet weak var recordBtn: UIButton!
 	
-	let streamer = LiveStream()
-	
+	let streamer = LiveStream(uploader: HttpUploader(endpoint: NSURL(string: "http://192.168.1.121:3000")!))
+
 	override func viewDidLoad() {
 		super.viewDidLoad()
+
 		// Do any additional setup after loading the view, typically from a nib.
 
 		let parentLayer: CALayer = self.view.layer
@@ -23,7 +24,7 @@ class ViewController: UIViewController {
 		previewLayer = streamer.recorder.previewLayer
 		parentLayer.addSublayer(previewLayer)
 		previewLayer.frame = parentLayer.frame
-		
+
 		// previewLayer.setVideoGravity(AVLayerVideoGravityResizeAspectFill)
 		// previewLayer.connection.videoOrientation(AVCaptureVideoOrientationLandscapeRight);
 

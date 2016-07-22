@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		990192C01D427715002CA2BC /* LiveStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 990192BF1D427715002CA2BC /* LiveStream.swift */; };
+		990192C41D427B42002CA2BC /* HttpUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 990192C31D427B42002CA2BC /* HttpUploader.swift */; };
 		990B95361D2E971A00C9E550 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 990B95351D2E971A00C9E550 /* AppDelegate.swift */; };
 		990B95381D2E971A00C9E550 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 990B95371D2E971A00C9E550 /* ViewController.swift */; };
 		990B953B1D2E971A00C9E550 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 990B95391D2E971A00C9E550 /* Main.storyboard */; };
@@ -55,6 +56,7 @@
 
 /* Begin PBXFileReference section */
 		990192BF1D427715002CA2BC /* LiveStream.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveStream.swift; sourceTree = "<group>"; };
+		990192C31D427B42002CA2BC /* HttpUploader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpUploader.swift; sourceTree = "<group>"; };
 		990B95321D2E971900C9E550 /* Hello-Stream.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hello-Stream.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		990B95351D2E971A00C9E550 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		990B95371D2E971A00C9E550 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -141,6 +143,7 @@
 				990B953E1D2E971A00C9E550 /* LaunchScreen.storyboard */,
 				990B95411D2E971A00C9E550 /* Info.plist */,
 				990B958D1D3007F400C9E550 /* Uploader.swift */,
+				990192C31D427B42002CA2BC /* HttpUploader.swift */,
 			);
 			path = "Hello-Stream";
 			sourceTree = "<group>";
@@ -331,6 +334,7 @@
 			files = (
 				990B958E1D3007F400C9E550 /* Uploader.swift in Sources */,
 				990B95381D2E971A00C9E550 /* ViewController.swift in Sources */,
+				990192C41D427B42002CA2BC /* HttpUploader.swift in Sources */,
 				990B95361D2E971A00C9E550 /* AppDelegate.swift in Sources */,
 				990192C01D427715002CA2BC /* LiveStream.swift in Sources */,
 			);
