@@ -23,6 +23,7 @@ class ViewController: UIViewController {
 
 		previewLayer.videoGravity = AVLayerVideoGravityResizeAspectFill
 		previewLayer.connection.videoOrientation = AVCaptureVideoOrientation.LandscapeLeft
+		streamer.recorder.videoConnection.videoOrientation = AVCaptureVideoOrientation.LandscapeLeft
 
 		let layerRect: CGRect = viewCamera.bounds
 		previewLayer.bounds = layerRect
@@ -38,10 +39,12 @@ class ViewController: UIViewController {
 		super.viewWillTransitionToSize(size, withTransitionCoordinator: coordinator)
 		if (previewLayer.connection.supportsVideoOrientation) {
 			switch (UIApplication.sharedApplication().statusBarOrientation) {
-			case .LandscapeLeft:
-				previewLayer.connection.videoOrientation = AVCaptureVideoOrientation.LandscapeLeft
 			case .LandscapeRight:
+				previewLayer.connection.videoOrientation = AVCaptureVideoOrientation.LandscapeLeft
+				streamer.recorder.videoConnection.videoOrientation = AVCaptureVideoOrientation.LandscapeLeft
+			case .LandscapeLeft:
 				previewLayer.connection.videoOrientation = AVCaptureVideoOrientation.LandscapeRight
+				streamer.recorder.videoConnection.videoOrientation = AVCaptureVideoOrientation.LandscapeRight
 			default:
 				previewLayer.connection.videoOrientation = AVCaptureVideoOrientation.LandscapeLeft
 			}
@@ -67,7 +70,7 @@ class ViewController: UIViewController {
 	
 	// This view is only avaiable in lanscape mode
 	override func preferredInterfaceOrientationForPresentation() -> UIInterfaceOrientation {
-		return UIInterfaceOrientation.LandscapeLeft
+		return UIInterfaceOrientation.LandscapeRight
 	}
 	
 	override func supportedInterfaceOrientations() -> UIInterfaceOrientationMask {

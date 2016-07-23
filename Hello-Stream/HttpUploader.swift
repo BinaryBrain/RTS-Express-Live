@@ -65,6 +65,7 @@ class HttpUploader: Uploader {
 			
 			let body = NSMutableData()
 			body.appendData(dataString.dataUsingEncoding(NSUTF8StringEncoding)!)
+			// TODO try catch filePath.path!
 			body.appendData(NSData(contentsOfFile: filePath.path!)!)
 			body.appendData("\r\n\r\n--\(boundaryConstant)--\r\n".dataUsingEncoding(NSUTF8StringEncoding)!)
 			
