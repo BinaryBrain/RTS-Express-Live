@@ -21,9 +21,11 @@ class LiveStream {
 	init (uploader: Uploader) {
 		self.uploader = uploader
 		
-		recorder.session.startRunning()
-		
 		NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(newAssetGroupCreated), name: NotifNewAssetGroupCreated, object: nil)
+	}
+	
+	func prepare() {
+		recorder.session.startRunning()
 	}
 	
 	func record() {
