@@ -21,6 +21,7 @@
 		990B95761D2E99AA00C9E550 /* libiconv.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 990B95751D2E99AA00C9E550 /* libiconv.2.dylib */; };
 		990B95781D2E99C100C9E550 /* libc++.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 990B95771D2E99C100C9E550 /* libc++.1.dylib */; };
 		990B958E1D3007F400C9E550 /* Uploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 990B958D1D3007F400C9E550 /* Uploader.swift */; };
+		99C535FB1D43AB7A001F9E7C /* FormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C535FA1D43AB7A001F9E7C /* FormViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +77,7 @@
 		990B95771D2E99C100C9E550 /* libc++.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.1.dylib"; path = "../../../../usr/lib/libc++.1.dylib"; sourceTree = "<group>"; };
 		990B958C1D2EB05F00C9E550 /* Hello-Stream-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Hello-Stream-Bridging-Header.h"; sourceTree = "<group>"; };
 		990B958D1D3007F400C9E550 /* Uploader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Uploader.swift; sourceTree = "<group>"; };
+		99C535FA1D43AB7A001F9E7C /* FormViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				990B95351D2E971A00C9E550 /* AppDelegate.swift */,
+				99C535FA1D43AB7A001F9E7C /* FormViewController.swift */,
 				990B95371D2E971A00C9E550 /* ViewController.swift */,
 				990192BF1D427715002CA2BC /* LiveStream.swift */,
 				990B95391D2E971A00C9E550 /* Main.storyboard */,
@@ -332,6 +335,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99C535FB1D43AB7A001F9E7C /* FormViewController.swift in Sources */,
 				990B958E1D3007F400C9E550 /* Uploader.swift in Sources */,
 				990B95381D2E971A00C9E550 /* ViewController.swift in Sources */,
 				990192C41D427B42002CA2BC /* HttpUploader.swift in Sources */,

@@ -56,7 +56,7 @@ class LiveStream {
 		print("-- File \(filePath.path!) (\(segmentDuration)s)")
 		
 		uploader.send(filePath) { (obj, success, duration) in
-			// Compute the new bitrate to optimize upload time and
+			// Compute the new bitrate to optimize upload time and quality
 			var newBitrate = Int(Double(self.recorder.h264Encoder.bitrate) * segmentDuration * self.uploadDurationRatio / duration!)
 			newBitrate = min(newBitrate, self.maxBitrate)
 			newBitrate = max(newBitrate, self.minBitrate)

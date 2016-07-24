@@ -35,9 +35,11 @@ class ViewController: UIViewController {
 		streamer.prepare()
 	}
 	
+	// Triggered when the device is rotated
 	override func viewWillTransitionToSize(size: CGSize, withTransitionCoordinator coordinator: UIViewControllerTransitionCoordinator) {
 		super.viewWillTransitionToSize(size, withTransitionCoordinator: coordinator)
 		if (previewLayer.connection.supportsVideoOrientation) {
+			// I don't really understand why the camera has to be in the oposite direction, but it seems to work that way
 			switch (UIApplication.sharedApplication().statusBarOrientation) {
 			case .LandscapeRight:
 				previewLayer.connection.videoOrientation = AVCaptureVideoOrientation.LandscapeLeft
