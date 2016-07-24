@@ -11,11 +11,11 @@ import UIKit
 class ViewController: UIViewController {
 	@IBOutlet weak var viewCamera: UIView!
 	@IBOutlet weak var recordBtn: UIButton!
-	
-	let streamer = LiveStream(uploader: HttpUploader(endpoint: NSURL(string: "http://192.168.1.121:3000")!))
-	
+
+	let streamer = LiveStream.sharedInstance
+
 	var previewLayer = AVCaptureVideoPreviewLayer()
-	
+
 	override func viewDidLoad() {
 		super.viewDidLoad()
 
@@ -33,11 +33,17 @@ class ViewController: UIViewController {
 		viewCamera.layer.addSublayer(previewLayer)
 
 		streamer.prepare()
+		
+		adjustRotation()
 	}
-	
+
 	// Triggered when the device is rotated
 	override func viewWillTransitionToSize(size: CGSize, withTransitionCoordinator coordinator: UIViewControllerTransitionCoordinator) {
 		super.viewWillTransitionToSize(size, withTransitionCoordinator: coordinator)
+		adjustRotation()
+	}
+	
+	func adjustRotation() {
 		if (previewLayer.connection.supportsVideoOrientation) {
 			// I don't really understand why the camera has to be in the oposite direction, but it seems to work that way
 			switch (UIApplication.sharedApplication().statusBarOrientation) {
@@ -59,20 +65,24 @@ class ViewController: UIViewController {
 	}
 
 	@IBAction func recordTapped(sender: UIButton) {
-		print("recordButtonTapped")
-		
 		if (!streamer.isRecording()) {
 			recordBtn.setTitle("Stop", forState: .Normal)
 			streamer.record()
 		} else {
 			recordBtn.setTitle("Record", forState: .Normal)
 			streamer.stop()
+			performSegueWithIdentifier("StopRecordingSegue", sender: recordBtn)
 		}
+	}
+
+	// We don't want the record button to trigger it automatically
+	override func shouldPerformSegueWithIdentifier(identifier: String, sender: AnyObject!) -> Bool {
+		return false
 	}
 	
 	// This view is only avaiable in lanscape mode
 	override func preferredInterfaceOrientationForPresentation() -> UIInterfaceOrientation {
-		return UIInterfaceOrientation.LandscapeRight
+		return UIInterfaceOrientation.LandscapeLeft
 	}
 	
 	override func supportedInterfaceOrientations() -> UIInterfaceOrientationMask {

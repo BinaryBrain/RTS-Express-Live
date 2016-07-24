@@ -25,7 +25,6 @@ class FormViewController: UIViewController, UITextFieldDelegate {
 		super.viewWillAppear(animated)
 		NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(FormViewController.keyboardDidShow(_:)), name: UIKeyboardDidShowNotification, object: nil)
 		NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(FormViewController.keyboardWillHide(_:)), name: UIKeyboardWillHideNotification, object: nil)
-
 	}
 
 	override func viewWillDisappear(animated: Bool) {
@@ -60,9 +59,5 @@ class FormViewController: UIViewController, UITextFieldDelegate {
 		}
 
 		return true
-	}
-	
-	@IBAction func nextTapped(sender: UIButton) {
-		print("asd")
 	}
 }

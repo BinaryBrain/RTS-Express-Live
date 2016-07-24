@@ -11,17 +11,21 @@ import Foundation
 class HttpUploader: Uploader {
 	let url: NSURL
 	let timeout = 15.0 // in seconds
+	let TODO_rand: Int
 	
 	var queue: [(NSURL, completionHandler?)] = []
 	
 	required init (endpoint: NSURL) {
 		self.url = endpoint
+		self.TODO_rand = random()
+		print("-- NEW UPLOADER: " + String(TODO_rand))
 	}
 	
 	typealias completionHandler = (obj: AnyObject?, success: Bool?, duration: Double?) -> Void
 	
 	func send(filePath: NSURL, _ aHandler: completionHandler?) {
 		print("Upload queue size: " + String(queue.count))
+		print ("-- uploader " + String(TODO_rand))
 		
 		queue.append((filePath, aHandler))
 		
@@ -65,7 +69,6 @@ class HttpUploader: Uploader {
 			
 			let body = NSMutableData()
 			body.appendData(dataString.dataUsingEncoding(NSUTF8StringEncoding)!)
-			// TODO try catch filePath.path!
 			body.appendData(NSData(contentsOfFile: filePath.path!)!)
 			body.appendData("\r\n\r\n--\(boundaryConstant)--\r\n".dataUsingEncoding(NSUTF8StringEncoding)!)
 			

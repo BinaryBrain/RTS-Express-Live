@@ -100,8 +100,7 @@
                                                 <rect key="frame" x="0.0" y="363" width="560" height="30"/>
                                                 <state key="normal" title="Suivant"/>
                                                 <connections>
-                                                    <action selector="nextTapped:" destination="7fn-K8-4zz" eventType="touchUpInside" id="BHo-BV-Pg5"/>
-                                                    <segue destination="BYZ-38-t0r" kind="show" id="JwK-aH-eNa"/>
+                                                    <segue destination="BYZ-38-t0r" kind="show" identifier="SendFormSegue" id="JwK-aH-eNa"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -265,6 +264,7 @@
                                 <state key="normal" title="Record"/>
                                 <connections>
                                     <action selector="recordTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xnR-pK-MwV"/>
+                                    <segue destination="7fn-K8-4zz" kind="show" identifier="StopRecordingSegue" id="b0d-4L-0Lu"/>
                                 </connections>
                             </button>
                         </subviews>

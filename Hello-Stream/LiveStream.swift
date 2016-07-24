@@ -14,13 +14,15 @@ class LiveStream {
 	let uploadDurationRatio = 0.7
 	
 	let recorder = KFRecorder(name: "test")
-	var uploader: Uploader
+	let uploader: Uploader
 
 	let filesURL = NSURL(fileURLWithPath: Utilities.applicationSupportDirectory())
 
-	init (uploader: Uploader) {
-		self.uploader = uploader
-		
+	static let sharedInstance = LiveStream()
+
+	private init () {
+		self.uploader = HttpUploader(endpoint: NSURL(string: "http://192.168.1.121:3000")!)
+
 		NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(newAssetGroupCreated), name: NotifNewAssetGroupCreated, object: nil)
 	}
 	
