@@ -19,6 +19,9 @@ class ViewController: UIViewController {
 	override func viewDidLoad() {
 		super.viewDidLoad()
 
+		// We must define an uploader
+		streamer.uploader = HttpUploader(endpoint: NSURL(string: "http://192.168.1.121:3000")!)
+
 		previewLayer = streamer.recorder.previewLayer
 
 		previewLayer.videoGravity = AVLayerVideoGravityResizeAspectFill
@@ -28,7 +31,6 @@ class ViewController: UIViewController {
 		let layerRect: CGRect = viewCamera.bounds
 		previewLayer.bounds = layerRect
 		previewLayer.position = CGPointMake(CGRectGetMidX(layerRect), CGRectGetMidY(layerRect))
-		// previewLayer.frame = layerRect
 		viewCamera.layer.sublayers = nil
 		viewCamera.layer.addSublayer(previewLayer)
 
@@ -43,6 +45,7 @@ class ViewController: UIViewController {
 		adjustRotation()
 	}
 	
+	/// This function adjust the orientation of the video and its preview layer.
 	func adjustRotation() {
 		if (previewLayer.connection.supportsVideoOrientation) {
 			// I don't really understand why the camera has to be in the oposite direction, but it seems to work that way
@@ -64,6 +67,7 @@ class ViewController: UIViewController {
 		// Dispose of any resources that can be recreated.
 	}
 
+	/// This function manages the toggle button to record or stop recording.
 	@IBAction func recordTapped(sender: UIButton) {
 		if (!streamer.isRecording()) {
 			recordBtn.setTitle("Stop", forState: .Normal)

@@ -60,4 +60,41 @@ class FormViewController: UIViewController, UITextFieldDelegate {
 
 		return true
 	}
+
+	override func shouldPerformSegueWithIdentifier(identifier: String, sender: AnyObject?) -> Bool {
+		// Filling the form is mandatory. This display an alert otherwise.
+		if (titleField.text!.isEmpty || descriptionField.text!.isEmpty || keywordsField.text!.isEmpty) {
+			let alert = UIAlertController(title: "Formulaire incomplet", message: "Veuillez compléter tous les champs du formulaire.", preferredStyle: UIAlertControllerStyle.Alert)
+			alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
+			self.presentViewController(alert, animated: true, completion: nil)
+			
+			return false
+		}
+		return true
+	}
+	
+	override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
+		if (segue.identifier == "SendFormSegue") {
+			// Define live stream metadata
+			let destViewController = segue.destinationViewController as! ViewController
+			destViewController.streamer.title = titleField.text!
+			destViewController.streamer.description = descriptionField.text!
+			destViewController.streamer.keywords = extractKeywords(keywordsField.text!)
+		}
+	}
+	
+	/// This function extract an array of keywords from a string and trim spaces
+	///
+	/// :param: keywords The string of keywords, separated by commas
+	///
+	/// :returns: An array of keywords
+	func extractKeywords(keywords: String) -> [String] {
+		let keywordsArray = keywords.componentsSeparatedByString(",").map({
+			keyword in keyword.stringByTrimmingCharactersInSet(
+				NSCharacterSet.whitespaceAndNewlineCharacterSet()
+			)
+		})
+		
+		return keywordsArray
+	}
 }
