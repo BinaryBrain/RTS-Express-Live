@@ -14,8 +14,8 @@
 		990B953B1D2E971A00C9E550 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 990B95391D2E971A00C9E550 /* Main.storyboard */; };
 		990B953D1D2E971A00C9E550 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 990B953C1D2E971A00C9E550 /* Assets.xcassets */; };
 		990B95401D2E971A00C9E550 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 990B953E1D2E971A00C9E550 /* LaunchScreen.storyboard */; };
-		990B954B1D2E971A00C9E550 /* Hello_StreamTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 990B954A1D2E971A00C9E550 /* Hello_StreamTests.swift */; };
-		990B95561D2E971A00C9E550 /* Hello_StreamUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 990B95551D2E971A00C9E550 /* Hello_StreamUITests.swift */; };
+		990B954B1D2E971A00C9E550 /* RTS_Express_LiveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 990B954A1D2E971A00C9E550 /* RTS_Express_LiveTests.swift */; };
+		990B95561D2E971A00C9E550 /* RTS_Express_LiveUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 990B95551D2E971A00C9E550 /* RTS_Express_LiveUITests.swift */; };
 		990B956C1D2E983700C9E550 /* libHudlFFmpegProcessor.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 990B95691D2E981100C9E550 /* libHudlFFmpegProcessor.a */; };
 		990B95741D2E999900C9E550 /* libz.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 990B95731D2E999900C9E550 /* libz.1.dylib */; };
 		990B95761D2E99AA00C9E550 /* libiconv.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 990B95751D2E99AA00C9E550 /* libiconv.2.dylib */; };
@@ -58,24 +58,24 @@
 /* Begin PBXFileReference section */
 		990192BF1D427715002CA2BC /* LiveStream.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveStream.swift; sourceTree = "<group>"; };
 		990192C31D427B42002CA2BC /* HttpUploader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpUploader.swift; sourceTree = "<group>"; };
-		990B95321D2E971900C9E550 /* Hello-Stream.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hello-Stream.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		990B95321D2E971900C9E550 /* RTS-Express-Live.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RTS-Express-Live.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		990B95351D2E971A00C9E550 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		990B95371D2E971A00C9E550 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		990B953A1D2E971A00C9E550 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		990B953C1D2E971A00C9E550 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		990B953F1D2E971A00C9E550 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		990B95411D2E971A00C9E550 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		990B95461D2E971A00C9E550 /* Hello-StreamTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Hello-StreamTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		990B954A1D2E971A00C9E550 /* Hello_StreamTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hello_StreamTests.swift; sourceTree = "<group>"; };
+		990B95461D2E971A00C9E550 /* RTS-Express-Live.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RTS-Express-Live.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		990B954A1D2E971A00C9E550 /* RTS_Express_LiveTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RTS_Express_LiveTests.swift; sourceTree = "<group>"; };
 		990B954C1D2E971A00C9E550 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		990B95511D2E971A00C9E550 /* Hello-StreamUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Hello-StreamUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		990B95551D2E971A00C9E550 /* Hello_StreamUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hello_StreamUITests.swift; sourceTree = "<group>"; };
+		990B95511D2E971A00C9E550 /* RTS-Express-Live.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RTS-Express-Live.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		990B95551D2E971A00C9E550 /* RTS_Express_LiveUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RTS_Express_LiveUITests.swift; sourceTree = "<group>"; };
 		990B95571D2E971A00C9E550 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		990B95631D2E981100C9E550 /* HudlFFmpegProcessor.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = HudlFFmpegProcessor.xcodeproj; path = Submodules/HudlFFmpeg/HudlFFmpegProcessor.xcodeproj; sourceTree = "<group>"; };
 		990B95731D2E999900C9E550 /* libz.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.dylib; path = ../../../../usr/lib/libz.1.dylib; sourceTree = "<group>"; };
 		990B95751D2E99AA00C9E550 /* libiconv.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.2.dylib; path = ../../../../usr/lib/libiconv.2.dylib; sourceTree = "<group>"; };
 		990B95771D2E99C100C9E550 /* libc++.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.1.dylib"; path = "../../../../usr/lib/libc++.1.dylib"; sourceTree = "<group>"; };
-		990B958C1D2EB05F00C9E550 /* Hello-Stream-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Hello-Stream-Bridging-Header.h"; sourceTree = "<group>"; };
+		990B958C1D2EB05F00C9E550 /* RTS-Express-Live-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RTS-Express-Live-Bridging-Header.h"; sourceTree = "<group>"; };
 		990B958D1D3007F400C9E550 /* Uploader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Uploader.swift; sourceTree = "<group>"; };
 		99C535FA1D43AB7A001F9E7C /* FormViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -112,14 +112,14 @@
 		990B95291D2E971900C9E550 = {
 			isa = PBXGroup;
 			children = (
-				990B958C1D2EB05F00C9E550 /* Hello-Stream-Bridging-Header.h */,
+				990B958C1D2EB05F00C9E550 /* RTS-Express-Live-Bridging-Header.h */,
 				990B95771D2E99C100C9E550 /* libc++.1.dylib */,
 				990B95751D2E99AA00C9E550 /* libiconv.2.dylib */,
 				990B95731D2E999900C9E550 /* libz.1.dylib */,
 				990B95631D2E981100C9E550 /* HudlFFmpegProcessor.xcodeproj */,
-				990B95341D2E971A00C9E550 /* Hello-Stream */,
-				990B95491D2E971A00C9E550 /* Hello-StreamTests */,
-				990B95541D2E971A00C9E550 /* Hello-StreamUITests */,
+				990B95341D2E971A00C9E550 /* RTS-Express-Live */,
+				990B95491D2E971A00C9E550 /* RTS-Express-LiveTests */,
+				990B95541D2E971A00C9E550 /* RTS-Express-LiveUITests */,
 				990B95331D2E971900C9E550 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -127,14 +127,14 @@
 		990B95331D2E971900C9E550 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				990B95321D2E971900C9E550 /* Hello-Stream.app */,
-				990B95461D2E971A00C9E550 /* Hello-StreamTests.xctest */,
-				990B95511D2E971A00C9E550 /* Hello-StreamUITests.xctest */,
+				990B95321D2E971900C9E550 /* RTS-Express-Live.app */,
+				990B95461D2E971A00C9E550 /* RTS-Express-Live.xctest */,
+				990B95511D2E971A00C9E550 /* RTS-Express-Live.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		990B95341D2E971A00C9E550 /* Hello-Stream */ = {
+		990B95341D2E971A00C9E550 /* RTS-Express-Live */ = {
 			isa = PBXGroup;
 			children = (
 				990B95351D2E971A00C9E550 /* AppDelegate.swift */,
@@ -148,24 +148,27 @@
 				990B958D1D3007F400C9E550 /* Uploader.swift */,
 				990192C31D427B42002CA2BC /* HttpUploader.swift */,
 			);
+			name = "RTS-Express-Live";
 			path = "Hello-Stream";
 			sourceTree = "<group>";
 		};
-		990B95491D2E971A00C9E550 /* Hello-StreamTests */ = {
+		990B95491D2E971A00C9E550 /* RTS-Express-LiveTests */ = {
 			isa = PBXGroup;
 			children = (
-				990B954A1D2E971A00C9E550 /* Hello_StreamTests.swift */,
+				990B954A1D2E971A00C9E550 /* RTS_Express_LiveTests.swift */,
 				990B954C1D2E971A00C9E550 /* Info.plist */,
 			);
+			name = "RTS-Express-LiveTests";
 			path = "Hello-StreamTests";
 			sourceTree = "<group>";
 		};
-		990B95541D2E971A00C9E550 /* Hello-StreamUITests */ = {
+		990B95541D2E971A00C9E550 /* RTS-Express-LiveUITests */ = {
 			isa = PBXGroup;
 			children = (
-				990B95551D2E971A00C9E550 /* Hello_StreamUITests.swift */,
+				990B95551D2E971A00C9E550 /* RTS_Express_LiveUITests.swift */,
 				990B95571D2E971A00C9E550 /* Info.plist */,
 			);
+			name = "RTS-Express-LiveUITests";
 			path = "Hello-StreamUITests";
 			sourceTree = "<group>";
 		};
@@ -181,9 +184,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		990B95311D2E971900C9E550 /* Hello-Stream */ = {
+		990B95311D2E971900C9E550 /* RTS-Express-Live */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 990B955A1D2E971A00C9E550 /* Build configuration list for PBXNativeTarget "Hello-Stream" */;
+			buildConfigurationList = 990B955A1D2E971A00C9E550 /* Build configuration list for PBXNativeTarget "RTS-Express-Live" */;
 			buildPhases = (
 				990B952E1D2E971900C9E550 /* Sources */,
 				990B952F1D2E971900C9E550 /* Frameworks */,
@@ -193,14 +196,14 @@
 			);
 			dependencies = (
 			);
-			name = "Hello-Stream";
+			name = "RTS-Express-Live";
 			productName = "Hello-Stream";
-			productReference = 990B95321D2E971900C9E550 /* Hello-Stream.app */;
+			productReference = 990B95321D2E971900C9E550 /* RTS-Express-Live.app */;
 			productType = "com.apple.product-type.application";
 		};
-		990B95451D2E971A00C9E550 /* Hello-StreamTests */ = {
+		990B95451D2E971A00C9E550 /* RTS-Express-LiveTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 990B955D1D2E971A00C9E550 /* Build configuration list for PBXNativeTarget "Hello-StreamTests" */;
+			buildConfigurationList = 990B955D1D2E971A00C9E550 /* Build configuration list for PBXNativeTarget "RTS-Express-LiveTests" */;
 			buildPhases = (
 				990B95421D2E971A00C9E550 /* Sources */,
 				990B95431D2E971A00C9E550 /* Frameworks */,
@@ -211,14 +214,14 @@
 			dependencies = (
 				990B95481D2E971A00C9E550 /* PBXTargetDependency */,
 			);
-			name = "Hello-StreamTests";
+			name = "RTS-Express-LiveTests";
 			productName = "Hello-StreamTests";
-			productReference = 990B95461D2E971A00C9E550 /* Hello-StreamTests.xctest */;
+			productReference = 990B95461D2E971A00C9E550 /* RTS-Express-Live.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		990B95501D2E971A00C9E550 /* Hello-StreamUITests */ = {
+		990B95501D2E971A00C9E550 /* RTS-Express-LiveUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 990B95601D2E971A00C9E550 /* Build configuration list for PBXNativeTarget "Hello-StreamUITests" */;
+			buildConfigurationList = 990B95601D2E971A00C9E550 /* Build configuration list for PBXNativeTarget "RTS-Express-LiveUITests" */;
 			buildPhases = (
 				990B954D1D2E971A00C9E550 /* Sources */,
 				990B954E1D2E971A00C9E550 /* Frameworks */,
@@ -229,9 +232,9 @@
 			dependencies = (
 				990B95531D2E971A00C9E550 /* PBXTargetDependency */,
 			);
-			name = "Hello-StreamUITests";
+			name = "RTS-Express-LiveUITests";
 			productName = "Hello-StreamUITests";
-			productReference = 990B95511D2E971A00C9E550 /* Hello-StreamUITests.xctest */;
+			productReference = 990B95511D2E971A00C9E550 /* RTS-Express-Live.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -260,7 +263,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 990B952D1D2E971900C9E550 /* Build configuration list for PBXProject "Hello-Stream" */;
+			buildConfigurationList = 990B952D1D2E971900C9E550 /* Build configuration list for PBXProject "RTS-Express-Live" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -279,9 +282,9 @@
 			);
 			projectRoot = "";
 			targets = (
-				990B95311D2E971900C9E550 /* Hello-Stream */,
-				990B95451D2E971A00C9E550 /* Hello-StreamTests */,
-				990B95501D2E971A00C9E550 /* Hello-StreamUITests */,
+				990B95311D2E971900C9E550 /* RTS-Express-Live */,
+				990B95451D2E971A00C9E550 /* RTS-Express-LiveTests */,
+				990B95501D2E971A00C9E550 /* RTS-Express-LiveUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -348,7 +351,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				990B954B1D2E971A00C9E550 /* Hello_StreamTests.swift in Sources */,
+				990B954B1D2E971A00C9E550 /* RTS_Express_LiveTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,7 +359,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				990B95561D2E971A00C9E550 /* Hello_StreamUITests.swift in Sources */,
+				990B95561D2E971A00C9E550 /* RTS_Express_LiveUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,12 +368,12 @@
 /* Begin PBXTargetDependency section */
 		990B95481D2E971A00C9E550 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 990B95311D2E971900C9E550 /* Hello-Stream */;
+			target = 990B95311D2E971900C9E550 /* RTS-Express-Live */;
 			targetProxy = 990B95471D2E971A00C9E550 /* PBXContainerItemProxy */;
 		};
 		990B95531D2E971A00C9E550 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 990B95311D2E971900C9E550 /* Hello-Stream */;
+			target = 990B95311D2E971900C9E550 /* RTS-Express-Live */;
 			targetProxy = 990B95521D2E971A00C9E550 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -488,9 +491,9 @@
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "Hello-Stream/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "ch.sachabron.Hello-Stream";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Hello-Stream-Bridging-Header.h";
+				PRODUCT_BUNDLE_IDENTIFIER = "ch.sachabron.RTS-Express-Live";
+				PRODUCT_NAME = "RTS-Express-Live";
+				SWIFT_OBJC_BRIDGING_HEADER = "RTS-Express-Live-Bridging-Header.h";
 				USER_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/Submodules/HudlFFmpeg/HudlFFmpegProcessor/**";
 			};
 			name = Debug;
@@ -503,9 +506,9 @@
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "Hello-Stream/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "ch.sachabron.Hello-Stream";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Hello-Stream-Bridging-Header.h";
+				PRODUCT_BUNDLE_IDENTIFIER = "ch.sachabron.RTS-Express-Live";
+				PRODUCT_NAME = "RTS-Express-Live";
+				SWIFT_OBJC_BRIDGING_HEADER = "RTS-Express-Live-Bridging-Header.h";
 				USER_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/Submodules/HudlFFmpeg/HudlFFmpegProcessor/**";
 			};
 			name = Release;
@@ -517,8 +520,8 @@
 				INFOPLIST_FILE = "Hello-StreamTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ch.sachabron.Hello-StreamTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hello-Stream.app/Hello-Stream";
+				PRODUCT_NAME = "RTS-Express-Live";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RTS-Express-Live.app/RTS-Express-Live";
 			};
 			name = Debug;
 		};
@@ -529,8 +532,8 @@
 				INFOPLIST_FILE = "Hello-StreamTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ch.sachabron.Hello-StreamTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hello-Stream.app/Hello-Stream";
+				PRODUCT_NAME = "RTS-Express-Live";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RTS-Express-Live.app/RTS-Express-Live";
 			};
 			name = Release;
 		};
@@ -540,7 +543,7 @@
 				INFOPLIST_FILE = "Hello-StreamUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ch.sachabron.Hello-StreamUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "RTS-Express-Live";
 				TEST_TARGET_NAME = "Hello-Stream";
 			};
 			name = Debug;
@@ -551,7 +554,7 @@
 				INFOPLIST_FILE = "Hello-StreamUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ch.sachabron.Hello-StreamUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "RTS-Express-Live";
 				TEST_TARGET_NAME = "Hello-Stream";
 			};
 			name = Release;
@@ -559,7 +562,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		990B952D1D2E971900C9E550 /* Build configuration list for PBXProject "Hello-Stream" */ = {
+		990B952D1D2E971900C9E550 /* Build configuration list for PBXProject "RTS-Express-Live" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				990B95581D2E971A00C9E550 /* Debug */,
@@ -568,7 +571,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		990B955A1D2E971A00C9E550 /* Build configuration list for PBXNativeTarget "Hello-Stream" */ = {
+		990B955A1D2E971A00C9E550 /* Build configuration list for PBXNativeTarget "RTS-Express-Live" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				990B955B1D2E971A00C9E550 /* Debug */,
@@ -577,7 +580,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		990B955D1D2E971A00C9E550 /* Build configuration list for PBXNativeTarget "Hello-StreamTests" */ = {
+		990B955D1D2E971A00C9E550 /* Build configuration list for PBXNativeTarget "RTS-Express-LiveTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				990B955E1D2E971A00C9E550 /* Debug */,
@@ -586,7 +589,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		990B95601D2E971A00C9E550 /* Build configuration list for PBXNativeTarget "Hello-StreamUITests" */ = {
+		990B95601D2E971A00C9E550 /* Build configuration list for PBXNativeTarget "RTS-Express-LiveUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				990B95611D2E971A00C9E550 /* Debug */,

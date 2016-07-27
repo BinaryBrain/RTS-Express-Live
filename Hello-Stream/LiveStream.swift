@@ -1,6 +1,6 @@
 //
 //  LiveStream.swift
-//  Hello-Stream
+//  RTS-Express-Live
 //
 //  Created by Sacha Bron on 22/07/16.
 //  Copyright © 2016 Sacha Bron. All rights reserved.
@@ -57,7 +57,7 @@ class LiveStream {
 	/// This function is called when new video fragments are avaiable.
 	/// It also manage to upload the manifest and, if needed, its metadata.
 	@objc func newAssetGroupCreated(notification: NSNotification) {
-		print("-- New Asset Group - %@", notification.object);
+		print("-- New Asset Group - %@", notification.object)
 		
 		let info = notification.object as! AssetGroup
 		let fragmentDuration = info.duration

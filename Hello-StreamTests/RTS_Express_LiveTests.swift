@@ -1,15 +1,15 @@
 //
-//  Hello_StreamTests.swift
-//  Hello-StreamTests
+//  RTS_Express_LiveTests.swift
+//  RTS-Express-LiveTests
 //
 //  Created by Sacha Bron on 07/07/16.
 //  Copyright © 2016 Sacha Bron. All rights reserved.
 //
 
 import XCTest
-@testable import Hello_Stream
+@testable import RTS_Express_Live
 
-class Hello_StreamTests: XCTestCase {
+class RTS_Express_LiveTests: XCTestCase {
     
     override func setUp() {
         super.setUp()

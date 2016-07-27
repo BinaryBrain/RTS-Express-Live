@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:Hello-Stream.xcodeproj">
+      location = "self:/Users/sacha/Desktop/Hello-Stream/RTS-Express-Live.xcodeproj">
    </FileRef>
 </Workspace>

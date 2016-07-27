@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "990B95311D2E971900C9E550"
-               BuildableName = "Hello-Stream.app"
-               BlueprintName = "Hello-Stream"
-               ReferencedContainer = "container:Hello-Stream.xcodeproj">
+               BuildableName = "RTS-Express-Live.app"
+               BlueprintName = "RTS-Express-Live"
+               ReferencedContainer = "container:RTS-Express-Live.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "990B95451D2E971A00C9E550"
-               BuildableName = "Hello-StreamTests.xctest"
-               BlueprintName = "Hello-StreamTests"
-               ReferencedContainer = "container:Hello-Stream.xcodeproj">
+               BuildableName = "RTS-Express-Live.xctest"
+               BlueprintName = "RTS-Express-LiveTests"
+               ReferencedContainer = "container:RTS-Express-Live.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "990B95501D2E971A00C9E550"
-               BuildableName = "Hello-StreamUITests.xctest"
-               BlueprintName = "Hello-StreamUITests"
-               ReferencedContainer = "container:Hello-Stream.xcodeproj">
+               BuildableName = "RTS-Express-Live.xctest"
+               BlueprintName = "RTS-Express-LiveUITests"
+               ReferencedContainer = "container:RTS-Express-Live.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -53,9 +53,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "990B95311D2E971900C9E550"
-            BuildableName = "Hello-Stream.app"
-            BlueprintName = "Hello-Stream"
-            ReferencedContainer = "container:Hello-Stream.xcodeproj">
+            BuildableName = "RTS-Express-Live.app"
+            BlueprintName = "RTS-Express-Live"
+            ReferencedContainer = "container:RTS-Express-Live.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -76,9 +76,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "990B95311D2E971900C9E550"
-            BuildableName = "Hello-Stream.app"
-            BlueprintName = "Hello-Stream"
-            ReferencedContainer = "container:Hello-Stream.xcodeproj">
+            BuildableName = "RTS-Express-Live.app"
+            BlueprintName = "RTS-Express-Live"
+            ReferencedContainer = "container:RTS-Express-Live.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -95,9 +95,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "990B95311D2E971900C9E550"
-            BuildableName = "Hello-Stream.app"
-            BlueprintName = "Hello-Stream"
-            ReferencedContainer = "container:Hello-Stream.xcodeproj">
+            BuildableName = "RTS-Express-Live.app"
+            BlueprintName = "RTS-Express-Live"
+            ReferencedContainer = "container:RTS-Express-Live.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "EF164A722E48BF76E9C8D5F5A92DACA3290A6F35",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "E3172EDDF5EC5DC9D2CAA33773EC384C59C34FAE" : 0,
+    "EF164A722E48BF76E9C8D5F5A92DACA3290A6F35" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "89C72435-22E9-4240-A23F-B9100F40483F",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "E3172EDDF5EC5DC9D2CAA33773EC384C59C34FAE" : "Hello-Stream\/Submodules\/HudlFFmpeg\/",
+    "EF164A722E48BF76E9C8D5F5A92DACA3290A6F35" : "Hello-Stream\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "RTS-Express-Live",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "RTS-Express-Live.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:BinaryBrain\/iOS-FFmpeg-processor.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "E3172EDDF5EC5DC9D2CAA33773EC384C59C34FAE"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:BinaryBrain\/RTS-Express-Live.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "EF164A722E48BF76E9C8D5F5A92DACA3290A6F35"
+    }
+  ]
+}
