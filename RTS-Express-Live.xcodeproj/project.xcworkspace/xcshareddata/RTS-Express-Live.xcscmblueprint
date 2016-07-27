@@ -9,8 +9,8 @@
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "89C72435-22E9-4240-A23F-B9100F40483F",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
-    "E3172EDDF5EC5DC9D2CAA33773EC384C59C34FAE" : "Hello-Stream\/Submodules\/HudlFFmpeg\/",
-    "EF164A722E48BF76E9C8D5F5A92DACA3290A6F35" : "Hello-Stream\/"
+    "E3172EDDF5EC5DC9D2CAA33773EC384C59C34FAE" : "RTS-Express-Live\/Submodules\/HudlFFmpeg\/",
+    "EF164A722E48BF76E9C8D5F5A92DACA3290A6F35" : "RTS-Express-Live\/"
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "RTS-Express-Live",
   "DVTSourceControlWorkspaceBlueprintVersion" : 204,

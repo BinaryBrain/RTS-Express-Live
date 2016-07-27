@@ -30,14 +30,14 @@
 			containerPortal = 990B952A1D2E971900C9E550 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 990B95311D2E971900C9E550;
-			remoteInfo = "Hello-Stream";
+			remoteInfo = "RTS-Express-Live";
 		};
 		990B95521D2E971A00C9E550 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 990B952A1D2E971900C9E550 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 990B95311D2E971900C9E550;
-			remoteInfo = "Hello-Stream";
+			remoteInfo = "RTS-Express-Live";
 		};
 		990B95681D2E981100C9E550 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -149,7 +149,7 @@
 				990192C31D427B42002CA2BC /* HttpUploader.swift */,
 			);
 			name = "RTS-Express-Live";
-			path = "Hello-Stream";
+			path = "RTS-Express-Live";
 			sourceTree = "<group>";
 		};
 		990B95491D2E971A00C9E550 /* RTS-Express-LiveTests */ = {
@@ -159,7 +159,7 @@
 				990B954C1D2E971A00C9E550 /* Info.plist */,
 			);
 			name = "RTS-Express-LiveTests";
-			path = "Hello-StreamTests";
+			path = "RTS-Express-LiveTests";
 			sourceTree = "<group>";
 		};
 		990B95541D2E971A00C9E550 /* RTS-Express-LiveUITests */ = {
@@ -169,7 +169,7 @@
 				990B95571D2E971A00C9E550 /* Info.plist */,
 			);
 			name = "RTS-Express-LiveUITests";
-			path = "Hello-StreamUITests";
+			path = "RTS-Express-LiveUITests";
 			sourceTree = "<group>";
 		};
 		990B95641D2E981100C9E550 /* Products */ = {
@@ -197,7 +197,7 @@
 			dependencies = (
 			);
 			name = "RTS-Express-Live";
-			productName = "Hello-Stream";
+			productName = "RTS-Express-Live";
 			productReference = 990B95321D2E971900C9E550 /* RTS-Express-Live.app */;
 			productType = "com.apple.product-type.application";
 		};
@@ -215,7 +215,7 @@
 				990B95481D2E971A00C9E550 /* PBXTargetDependency */,
 			);
 			name = "RTS-Express-LiveTests";
-			productName = "Hello-StreamTests";
+			productName = "RTS-Express-LiveTests";
 			productReference = 990B95461D2E971A00C9E550 /* RTS-Express-Live.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
@@ -233,7 +233,7 @@
 				990B95531D2E971A00C9E550 /* PBXTargetDependency */,
 			);
 			name = "RTS-Express-LiveUITests";
-			productName = "Hello-StreamUITests";
+			productName = "RTS-Express-LiveUITests";
 			productReference = 990B95511D2E971A00C9E550 /* RTS-Express-Live.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
@@ -489,7 +489,7 @@
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = "Hello-Stream/Info.plist";
+				INFOPLIST_FILE = "RTS-Express-Live/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ch.sachabron.RTS-Express-Live";
 				PRODUCT_NAME = "RTS-Express-Live";
@@ -504,7 +504,7 @@
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = "Hello-Stream/Info.plist";
+				INFOPLIST_FILE = "RTS-Express-Live/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ch.sachabron.RTS-Express-Live";
 				PRODUCT_NAME = "RTS-Express-Live";
@@ -517,9 +517,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = "Hello-StreamTests/Info.plist";
+				INFOPLIST_FILE = "RTS-Express-LiveTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "ch.sachabron.Hello-StreamTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "ch.sachabron.RTS-Express-LiveTests";
 				PRODUCT_NAME = "RTS-Express-Live";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RTS-Express-Live.app/RTS-Express-Live";
 			};
@@ -529,9 +529,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = "Hello-StreamTests/Info.plist";
+				INFOPLIST_FILE = "RTS-Express-LiveTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "ch.sachabron.Hello-StreamTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "ch.sachabron.RTS-Express-LiveTests";
 				PRODUCT_NAME = "RTS-Express-Live";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RTS-Express-Live.app/RTS-Express-Live";
 			};
@@ -540,22 +540,22 @@
 		990B95611D2E971A00C9E550 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				INFOPLIST_FILE = "Hello-StreamUITests/Info.plist";
+				INFOPLIST_FILE = "RTS-Express-LiveUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "ch.sachabron.Hello-StreamUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = "ch.sachabron.RTS-Express-LiveUITests";
 				PRODUCT_NAME = "RTS-Express-Live";
-				TEST_TARGET_NAME = "Hello-Stream";
+				TEST_TARGET_NAME = "RTS-Express-Live";
 			};
 			name = Debug;
 		};
 		990B95621D2E971A00C9E550 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				INFOPLIST_FILE = "Hello-StreamUITests/Info.plist";
+				INFOPLIST_FILE = "RTS-Express-LiveUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "ch.sachabron.Hello-StreamUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = "ch.sachabron.RTS-Express-LiveUITests";
 				PRODUCT_NAME = "RTS-Express-Live";
-				TEST_TARGET_NAME = "Hello-Stream";
+				TEST_TARGET_NAME = "RTS-Express-Live";
 			};
 			name = Release;
 		};
