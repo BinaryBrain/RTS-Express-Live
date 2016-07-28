@@ -32,7 +32,7 @@ class FormViewController: UIViewController, UITextFieldDelegate {
 		NSNotificationCenter.defaultCenter().removeObserver(self)	}
 
 	// Listeners to adapt the scroll view to the right size
-	func keyboardDidShow(notification: NSNotification) {
+	@objc private func keyboardDidShow(notification: NSNotification) {
 		let userInfo: NSDictionary = notification.userInfo!
 		let keyboardSize = userInfo.objectForKey(UIKeyboardFrameBeginUserInfoKey)!.CGRectValue.size
 		let contentInsets = UIEdgeInsetsMake(0, 0, keyboardSize.height, 0)
@@ -43,7 +43,7 @@ class FormViewController: UIViewController, UITextFieldDelegate {
 		viewRect.size.height -= keyboardSize.height
 	}
 
-	func keyboardWillHide(notification: NSNotification) {
+	@objc private func keyboardWillHide(notification: NSNotification) {
 		scrollView.contentInset = UIEdgeInsetsZero
 		scrollView.scrollIndicatorInsets = UIEdgeInsetsZero
 	}
@@ -88,7 +88,7 @@ class FormViewController: UIViewController, UITextFieldDelegate {
 	/// :param: keywords The string of keywords, separated by commas
 	///
 	/// :returns: An array of keywords
-	func extractKeywords(keywords: String) -> [String] {
+	private func extractKeywords(keywords: String) -> [String] {
 		let keywordsArray = keywords.componentsSeparatedByString(",").map({
 			keyword in keyword.stringByTrimmingCharactersInSet(
 				NSCharacterSet.whitespaceAndNewlineCharacterSet()
